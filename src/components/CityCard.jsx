@@ -135,14 +135,14 @@ export default function CityCard({ city, onClick }) {
 
   return (
     <div style={styles.card} onClick={onClick}>
-      {/* Loading */}
+      
       {!entry && (
         <div style={styles.loading}>
           <span style={styles.pulse}>Loading…</span>
         </div>
       )}
 
-      {/* Error */}
+      
       {entry?.error && (
         <>
           <div style={styles.cardTop}>
@@ -159,7 +159,7 @@ export default function CityCard({ city, onClick }) {
         </>
       )}
 
-      {/* Loaded */}
+      
       {entry?.data && (
         <>
           <div style={styles.cardTop}>
